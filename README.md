@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Bug Reproduction
+
+This project reproduce the bug reported in https://github.com/tailwindlabs/tailwindcss/issues/7687.
+
+To reproduce, install the dependencies and attempt to build the project using `npm run build`. 
+
+The project fails to build successfully until the css is edited as follows. The file `./styles/custom.css` includes a single class, `.my-class`. Edit line 2 and delete the applied rule `bg-white`. The project will build successfully.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
